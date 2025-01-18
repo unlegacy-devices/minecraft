@@ -76,20 +76,20 @@ mkdir drmatoi_minecrafthost && drmatoi_minecrafthost
 
 cd drmatoi_minecrafthost
 
-wget -O server.jar https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar
+wget -O server.jar https://piston-data.mojang.com/v1/objects/952438ac4e01b4d115c5fc38f891710c4941df29/server.jar
 
 chmod +x server.jar
 
  echo eula=true > eula.txt
 
-java -Xmx4G -Xms4G -jar server.jar nogui
+java -Xmx128M -Xms320M -jar server.jar nogui
 
         exit
     elif [ $ch -eq 2 ];then 
          
  while true
 do
-java -Xms4G -Xmx4G -jar server.jar 
+java -Xms128M -Xmx320M -jar server.jar 
 sleep 1 
 done
         
